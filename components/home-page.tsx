@@ -39,24 +39,24 @@ export function HomePage({
   const locationLinks = buildLocationLinks(currentLocationLabel);
   const faqs = [
     {
-      question: "{{FAQ_1_QUESTION}}",
-      answer: "{{FAQ_1_ANSWER}}",
+      question: "What vehicles do you offer?",
+      answer: "We cover cars, vans, minibuses and trucks, depending on what your booking needs.",
     },
     {
-      question: "{{FAQ_2_QUESTION}}",
-      answer: "{{FAQ_2_ANSWER}}",
+      question: "Can you help me pick the right size?",
+      answer: "Yes. Share the trip details and we will help you choose a sensible fit.",
     },
     {
-      question: "{{FAQ_3_QUESTION}}",
-      answer: "{{FAQ_3_ANSWER}}",
+      question: "Is this suitable for business hire?",
+      answer: "Absolutely. Many customers hire for deliveries, site work, temporary cover and transport between appointments.",
     },
     {
-      question: "{{FAQ_4_QUESTION}}",
-      answer: "{{FAQ_4_ANSWER}}",
+      question: "Do you cater for longer journeys?",
+      answer: "Yes. The service is set up for local travel as well as wider UK plans, subject to the booking.",
     },
     {
-      question: "{{FAQ_5_QUESTION}}",
-      answer: "{{FAQ_5_ANSWER}}",
+      question: "How do I arrange a booking?",
+      answer: "Contact the team with your dates and preferred vehicle type, and we will help you get started.",
     },
   ];
 
@@ -111,10 +111,10 @@ export function HomePage({
             <div className="max-w-3xl">
               <div className="flex flex-col gap-6">
                 <h1 className="text-5xl font-bold tracking-tight">
-                  {"{{HERO_TITLE}}"}
+                  {"Vehicle Hire North Baddesley for Every Journey"}
                 </h1>
                 <p className="text-xl text-green-100">
-                  {"{{HERO_SUBTITLE}}"}
+                  {"Self-drive vehicle hire in North Baddesley for cars, vans, minibuses and trucks, with sensible options for private travel, trade work and local journeys across Hampshire."}
                 </p>
                 <Button
                   size="lg"
@@ -148,22 +148,22 @@ export function HomePage({
               <div className="max-w-2xl">
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-green-200 bg-white/80 px-3 py-1 text-sm font-medium text-[#17a24a] backdrop-blur">
                   <PhoneCall className="h-4 w-4" />
-                  {"{{BOOKING_BADGE_TEXT}}"}
+                  {"Quick, practical booking"}
                 </div>
                 <h2 className="text-2xl font-bold tracking-tight text-slate-950 md:text-3xl">
-                  {"{{BOOKING_SECTION_TITLE}}"}
+                  {"Reserve the right vehicle with confidence"}
                 </h2>
                 <p className="mt-3 text-base leading-7 text-slate-600">
-                  {"{{BOOKING_SECTION_DESCRIPTION}}"}
+                  {"Tell us what you need, when you need it and how you plan to use it. We’ll help you choose a sensible vehicle and keep the booking process refreshingly simple."}
                 </p>
                 <div className="mt-5 flex flex-wrap gap-3 text-sm text-slate-600">
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 shadow-sm">
                     <PhoneCall className="h-4 w-4 text-[#17a24a]" />
-                    {"{{BOOKING_FEATURE_1}}"}
+                    {"Flexible collection planning"}
                   </div>
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 shadow-sm">
                     <Clock3 className="h-4 w-4 text-[#17a24a]" />
-                    {"{{BOOKING_FEATURE_2}}"}
+                    {"Options for local and long-distance use"}
                   </div>
                 </div>
               </div>
@@ -183,28 +183,28 @@ export function HomePage({
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-4xl font-bold">
-              {"{{TRUST_SECTION_TITLE}}"}
+              {"Why customers choose us"}
             </h2>
             <p className="text-lg text-muted-foreground">
-              {"{{TRUST_SECTION_DESCRIPTION}}"}
+              {"A dependable hire service should make your plans easier, not more complicated. Our approach is to keep the process practical, the vehicle choice broad and the support easy to work with."}
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3 md:auto-rows-fr">
             {[
               {
-                title: "{{TRUST_CARD_1_TITLE}}",
-                description: "{{TRUST_CARD_1_DESCRIPTION}}",
+                title: "Flexible vehicle choice",
+                description: "A useful range of vehicles for private trips, trade work and group transport.",
                 icon: ShieldCheck,
               },
               {
-                title: "{{TRUST_CARD_2_TITLE}}",
-                description: "{{TRUST_CARD_2_DESCRIPTION}}",
+                title: "Straightforward support",
+                description: "Clear guidance to help you pick the right hire option without second-guessing.",
                 icon: Star,
               },
               {
-                title: "{{TRUST_CARD_3_TITLE}}",
-                description: "{{TRUST_CARD_3_DESCRIPTION}}",
+                title: "Ready for real use",
+                description: "A practical setup for local jobs, regional travel and everyday mobility.",
                 icon: Users,
               },
             ].map((item) => (
@@ -231,13 +231,13 @@ export function HomePage({
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">
-              {"{{FEATURE_SECTION_KICKER}}"}
+              {"Fleet overview"}
             </p>
             <h2 className="max-w-2xl text-4xl font-bold tracking-tight md:text-5xl">
-              {"{{FEATURE_SECTION_TITLE}}"}
+              {"A broad hire range for real-world transport needs"}
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              {"{{FEATURE_SECTION_DESCRIPTION}}"}
+              {"Our vehicle hire service is built to cover everyday travel, commercial work and larger group bookings without making the process harder than it needs to be. It is a practical option for customers who want clear choices and dependable support."}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button
@@ -286,16 +286,16 @@ export function HomePage({
       <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">
-            {"{{CONTENT_SECTION_KICKER}}"}
+            {"Why book with us"}
           </p>
           <h2 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">
-            {"{{CONTENT_SECTION_TITLE}}"}
+            {"Vehicle hire that stays practical from start to finish"}
           </h2>
           <div className="mx-auto mt-8 max-w-3xl space-y-6 text-lg leading-8 text-slate-600">
-            <p>{"{{CONTENT_SECTION_PARAGRAPH_1}}"}</p>
-            <p>{"{{CONTENT_SECTION_PARAGRAPH_2}}"}</p>
-            <p>{"{{CONTENT_SECTION_PARAGRAPH_3}}"}</p>
-            <p>{"{{CONTENT_SECTION_PARAGRAPH_4}}"}</p>
+            <p>{"We keep the hire process clear so you can get on with the job in hand. That means sensible vehicle choices, straightforward communication and support that feels useful rather than overcomplicated."}</p>
+            <p>{"If you are planning a move, a trade collection, a team outing or a family trip, the fleet mix gives you room to choose well. It is a broad service that works for one-off bookings as well as repeat hire."}</p>
+            <p>{"Many customers want a vehicle that fits neatly into a day’s plans without creating extra stress. With that in mind, the service is set up to help with practical travel, local running around and longer mileage alike."}</p>
+            <p>{"The same approach suits both private and commercial users. Whether you need more seats, more load space or simply a dependable car for a few days, the booking experience is kept direct and manageable."}</p>
           </div>
         </div>
       </section>
@@ -308,13 +308,13 @@ export function HomePage({
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">
-              {"{{BENEFITS_SECTION_KICKER}}"}
+              {"Hire benefits"}
             </p>
             <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">
-              {"{{BENEFITS_SECTION_TITLE}}"}
+              {"More flexibility, less hassle"}
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              {"{{BENEFITS_SECTION_DESCRIPTION}}"}
+              {"A good hire service should save time as well as provide the right vehicle. That is why the focus stays on choice, convenience and sensible support for different kinds of travel."}
             </p>
           </div>
 
@@ -322,21 +322,21 @@ export function HomePage({
             {[
               {
                 icon: BadgePoundSterling,
-                title: "{{BENEFIT_1_TITLE}}",
-                description: "{{BENEFIT_1_DESCRIPTION}}",
-                detail: "{{BENEFIT_1_DETAIL}}",
+                title: "Choose the right size",
+                description: "Pick a vehicle that suits the job rather than making do with something too small or too large.",
+                detail: "Useful for everything from family trips to heavier-duty commercial use.",
               },
               {
                 icon: Clock3,
-                title: "{{BENEFIT_2_TITLE}}",
-                description: "{{BENEFIT_2_DESCRIPTION}}",
-                detail: "{{BENEFIT_2_DETAIL}}",
+                title: "Keep plans moving",
+                description: "A clear booking process helps you stay organised when your day is already full.",
+                detail: "Ideal for time-sensitive journeys, scheduled collections and short-notice hire.",
               },
               {
                 icon: CheckCircle2,
-                title: "{{BENEFIT_3_TITLE}}",
-                description: "{{BENEFIT_3_DESCRIPTION}}",
-                detail: "{{BENEFIT_3_DETAIL}}",
+                title: "Support across different needs",
+                description: "The service works well for private customers, tradespeople and businesses with changing transport demands.",
+                detail: "A practical fit for moving, deliveries, events and everyday mobility.",
               },
             ].map((item) => (
               <div
@@ -368,10 +368,10 @@ export function HomePage({
               {"Service Areas"}
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
-              {"{{INFO_CONTENT_SECTION_TITLE}}"}
+              {"Coverage and support across the local area"}
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              {"{{INFO_CONTENT_SECTION_INTRO}}"}
+              {"Our service areas are chosen to reflect where local customers actually travel, work and plan their days. That means practical coverage for surrounding towns, commuter links and destinations that matter to everyday hire users."}
             </p>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -388,26 +388,26 @@ export function HomePage({
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
               <h3 className="text-2xl font-semibold tracking-tight text-slate-950">
-                {"{{INFO_CONTENT_BLOCK_1_TITLE}}"}
+                {"Well placed for nearby travel"}
               </h3>
               <p className="mt-3 text-base leading-7 text-slate-600">
-                {"{{INFO_CONTENT_BLOCK_1_BODY}}"}
+                {"North Baddesley is well placed for drivers who need quick access to nearby towns and main Hampshire routes. That makes it a useful service base for customers who want a hire vehicle that fits both local jobs and wider travel plans."}
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
               <h3 className="text-2xl font-semibold tracking-tight text-slate-950">
-                {"{{INFO_CONTENT_BLOCK_2_TITLE}}"}
+                {"Good for different kinds of booking"}
               </h3>
               <p className="mt-3 text-base leading-7 text-slate-600">
-                {"{{INFO_CONTENT_BLOCK_2_BODY}}"}
+                {"The range suits households, tradespeople and businesses that need temporary transport without committing to the wrong vehicle size. It keeps choices broad enough to be useful while still feeling easy to understand."}
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
               <h3 className="text-2xl font-semibold tracking-tight text-slate-950">
-                {"{{INFO_CONTENT_BLOCK_3_TITLE}}"}
+                {"Flexible for short or longer hire"}
               </h3>
               <p className="mt-3 text-base leading-7 text-slate-600">
-                {"{{INFO_CONTENT_BLOCK_3_BODY}}"}
+                {"Whether the hire is for a single day, a longer project or a group journey, the aim is to make collection and use feel straightforward from the outset."}
               </p>
             </div>
           </div>
@@ -421,24 +421,24 @@ export function HomePage({
               {"Local Guide"}
             </p>
             <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">
-              {"{{LOCAL_GUIDE_SECTION_TITLE}}"}
+              {"Local driving guide for North Baddesley"}
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              {"{{LOCAL_GUIDE_SECTION_DESCRIPTION}}"}
+              {"Plan your trip with a quick look at the main local roads, nearby places to stop and the most practical fuel options around North Baddesley."}
             </p>
           </div>
           <div className="mx-auto mt-12 max-w-4xl space-y-6 text-left">
             <p className="text-base leading-8 text-slate-600">
-              {"{{LOCAL_GUIDE_PARAGRAPH_1}}"}
+              {"North Baddesley sits neatly around Rownhams Road, with Nutburn Road and Knightwood Road giving useful links for shorter local journeys. If you are collecting a van or car for a house move, school run or business call, these roads make it straightforward to head out without battling the busiest city-centre traffic first."}
             </p>
             <p className="text-base leading-8 text-slate-600">
-              {"{{LOCAL_GUIDE_PARAGRAPH_2}}"}
+              {"For longer trips, Castle Lane and Luzborough Lane offer a sensible route towards wider Hampshire connections, while Luzborough Roundabout is a familiar turning point for drivers heading onwards. That mix works well for self-drive hire, especially when you want a simple start to the day and an easy exit towards Southampton or Romsey."}
             </p>
             <p className="text-base leading-8 text-slate-600">
-              {"{{LOCAL_GUIDE_PARAGRAPH_3}}"}
+              {"If you are staying nearby, places such as Chilworth Manor, Days Inn, Wrens Farm B&B, Shepherd's Cabin and The Mini Log Cabin can all suit a hire vehicle booking where luggage space matters. A car or minibus is often the easier choice for guests with bags, equipment or family travel plans, particularly when moving between accommodation and local attractions."}
             </p>
             <p className="text-base leading-8 text-slate-600">
-              {"{{LOCAL_GUIDE_PARAGRAPH_4}}"}
+              {"For fuel and quick checks before returning a vehicle, drivers have a choice of Kingslake Cars, Crampmoor Garage, Asda, BP, Greatbridge Service Station and Shell in the wider area. That gives you a practical range of stop-off points whether you are topping up after a day’s use or setting off early for a longer journey."}
             </p>
           </div>
         </div>
@@ -448,13 +448,13 @@ export function HomePage({
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">
-              {"{{FAQ_SECTION_KICKER}}"}
+              {"FAQs"}
             </p>
             <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">
-              {"{{FAQ_SECTION_TITLE}}"}
+              {"Common questions about hiring with us"}
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              {"{{FAQ_SECTION_DESCRIPTION}}"}
+              {"A few quick answers to help you plan your hire with less back-and-forth."}
             </p>
           </div>
 
@@ -480,9 +480,9 @@ export function HomePage({
 
       <section className="bg-[#17a24a] px-6 py-16 text-center text-white">
         <div className="mx-auto max-w-2xl">
-          <h2 className="mb-4 text-4xl font-bold">{"{{CTA_TITLE}}"}</h2>
+          <h2 className="mb-4 text-4xl font-bold">{"Ready to book your hire vehicle?"}</h2>
           <p className="mb-8 text-lg text-green-100">
-            {"{{CTA_DESCRIPTION}}"}
+            {"Tell us what you need and we will help you arrange a sensible vehicle for the job, the journey or the day ahead."}
           </p>
           <Button
             size="lg"
