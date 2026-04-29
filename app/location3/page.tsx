@@ -20,20 +20,20 @@ import {
 } from "lucide-react";
 
 export default function LocationPage() {
-  const locationLinks = buildLocationLinks("{{LOCATION_3_NAME}}");
-  const heroImage = { src: "/images/location3-image1.jpeg", alt: "{{LOCATION3_IMAGE_1_ALT}}" };
-  const supportImage = { src: "/images/location3-image2.jpeg", alt: "{{LOCATION3_IMAGE_2_ALT}}" };
+  const locationLinks = buildLocationLinks("Winchester");
+  const heroImage = { src: "/images/location3-image1.jpeg", alt: "A modern hire car driving through a historic street in Winchester." };
+  const supportImage = { src: "/images/location3-image2.jpeg", alt: "A family loading bags into a hired estate car in Winchester." };
   const faqs = [
-    { question: "{{LOCATION3_FAQ_1_QUESTION}}", answer: "{{LOCATION3_FAQ_1_ANSWER}}" },
-    { question: "{{LOCATION3_FAQ_2_QUESTION}}", answer: "{{LOCATION3_FAQ_2_ANSWER}}" },
-    { question: "{{LOCATION3_FAQ_3_QUESTION}}", answer: "{{LOCATION3_FAQ_3_ANSWER}}" },
-    { question: "{{LOCATION3_FAQ_4_QUESTION}}", answer: "{{LOCATION3_FAQ_4_ANSWER}}" },
-    { question: "{{LOCATION3_FAQ_5_QUESTION}}", answer: "{{LOCATION3_FAQ_5_ANSWER}}" },
+    { question: "Is car hire a good option for Winchester city driving?", answer: "Yes. A car can be ideal for day-to-day travel, appointments and visiting the city centre." },
+    { question: "Can I hire a van for a house move in Winchester?", answer: "Yes. Van hire is well suited to moving furniture, boxes and other household items." },
+    { question: "Do you offer minibuses for family or group travel?", answer: "Yes. Minibus hire works well for trips, events and school or club travel." },
+    { question: "What kind of truck hire is available?", answer: "Truck hire is useful for heavier loads, commercial deliveries and larger moving jobs." },
+    { question: "Can I get help choosing the right vehicle size?", answer: "Yes. We can help you match the vehicle to the trip so you book something suitable." },
   ];
   const trustCards = [
-    { title: "{{LOCATION3_TRUST_CARD_1_TITLE}}", description: "{{LOCATION3_TRUST_CARD_1_DESCRIPTION}}", icon: ShieldCheck },
-    { title: "{{LOCATION3_TRUST_CARD_2_TITLE}}", description: "{{LOCATION3_TRUST_CARD_2_DESCRIPTION}}", icon: Star },
-    { title: "{{LOCATION3_TRUST_CARD_3_TITLE}}", description: "{{LOCATION3_TRUST_CARD_3_DESCRIPTION}}", icon: Users },
+    { title: "Useful around the city and beyond", description: "A strong choice for Winchester trips that mix town streets with out-of-town routes.", icon: ShieldCheck },
+    { title: "Clear vehicle selection", description: "Pick the size and type that fits the plan rather than working around a poor match.", icon: Star },
+    { title: "Support for private and trade use", description: "Suitable for homes, offices, events and everyday transport needs.", icon: Users },
   ];
   const featureStats = [
     { value: "Car Hire", label: "Flexible travel for everyday journeys" },
@@ -42,9 +42,9 @@ export default function LocationPage() {
     { value: "Truck Hire", label: "Strong transport options for heavier loads" },
   ];
   const benefits = [
-    { icon: BadgePoundSterling, title: "{{LOCATION3_BENEFIT_1_TITLE}}", description: "{{LOCATION3_BENEFIT_1_DESCRIPTION}}", detail: "{{LOCATION3_BENEFIT_1_DETAIL}}" },
-    { icon: Clock3, title: "{{LOCATION3_BENEFIT_2_TITLE}}", description: "{{LOCATION3_BENEFIT_2_DESCRIPTION}}", detail: "{{LOCATION3_BENEFIT_2_DETAIL}}" },
-    { icon: CheckCircle2, title: "{{LOCATION3_BENEFIT_3_TITLE}}", description: "{{LOCATION3_BENEFIT_3_DESCRIPTION}}", detail: "{{LOCATION3_BENEFIT_3_DETAIL}}" },
+    { icon: BadgePoundSterling, title: "Good for city access", description: "Winchester drivers often need vehicles that are manageable in town but still comfortable for longer trips.", detail: "Handy for appointments, shopping and family travel." },
+    { icon: Clock3, title: "Room for group plans", description: "A minibus can simplify travel when several people are heading to the same place.", detail: "Useful for days out, events and organised trips." },
+    { icon: CheckCircle2, title: "Space for heavier tasks", description: "Choose a van or truck when your job involves boxes, equipment or stock rather than passengers.", detail: "A practical option for removals and commercial runs." },
   ];
 
   return (
@@ -86,8 +86,8 @@ export default function LocationPage() {
           <div className="relative z-10 grid gap-12 lg:grid-cols-[1fr_420px] lg:items-center">
             <div className="max-w-3xl">
               <div className="flex flex-col gap-6">
-                <h1 className="text-5xl font-bold tracking-tight">{"{{LOCATION3_HERO_TITLE}}"}</h1>
-                <p className="text-xl text-green-100">{"{{LOCATION3_HERO_SUBTITLE}}"}</p>
+                <h1 className="text-5xl font-bold tracking-tight">{"Vehicle Hire Winchester for Comfortable Local and Longer-Distance Travel"}</h1>
+                <p className="text-xl text-green-100">{"From compact cars to larger vans, minibuses and trucks, our Winchester vehicle hire options are built to support city journeys, business needs and plans that reach further afield."}</p>
                 <Button size="lg" className="w-fit bg-[#17a24a] text-white hover:bg-[#12843c]" asChild>
                   <a href={phoneHref}>Book Now</a>
                 </Button>
@@ -110,18 +110,18 @@ export default function LocationPage() {
               <div className="max-w-2xl">
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-green-200 bg-white/80 px-3 py-1 text-sm font-medium text-[#17a24a] backdrop-blur">
                   <PhoneCall className="h-4 w-4" />
-                  {"{{LOCATION3_BOOKING_BADGE_TEXT}}"}
+                  {"Winchester hire support"}
                 </div>
-                <h2 className="text-2xl font-bold tracking-tight text-slate-950 md:text-3xl">{"{{LOCATION3_BOOKING_SECTION_TITLE}}"}</h2>
-                <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION3_BOOKING_SECTION_DESCRIPTION}}"}</p>
+                <h2 className="text-2xl font-bold tracking-tight text-slate-950 md:text-3xl">{"Book a vehicle that suits the route ahead"}</h2>
+                <p className="mt-3 text-base leading-7 text-slate-600">{"Whether you are travelling across the city, heading to a meeting or planning a bigger journey, the aim is to make booking straightforward and the vehicle choice obvious."}</p>
                 <div className="mt-5 flex flex-wrap gap-3 text-sm text-slate-600">
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 shadow-sm">
                     <PhoneCall className="h-4 w-4 text-[#17a24a]" />
-                    {"{{LOCATION3_BOOKING_FEATURE_1}}"}
+                    {"Suitable for short and longer hires"}
                   </div>
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 shadow-sm">
                     <Clock3 className="h-4 w-4 text-[#17a24a]" />
-                    {"{{LOCATION3_BOOKING_FEATURE_2}}"}
+                    {"Choice for work or personal use"}
                   </div>
                 </div>
               </div>
@@ -136,8 +136,8 @@ export default function LocationPage() {
       <section id="trust" className="px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold">{"{{LOCATION3_TRUST_SECTION_TITLE}}"}</h2>
-            <p className="text-lg text-muted-foreground">{"{{LOCATION3_TRUST_SECTION_DESCRIPTION}}"}</p>
+            <h2 className="mb-4 text-4xl font-bold">{"Winchester customers choose practical hire"}</h2>
+            <p className="text-lg text-muted-foreground">{"A dependable option when you want a sensible vehicle, a clear booking process and support that keeps the day moving."}</p>
           </div>
           <div className="grid gap-8 md:grid-cols-3 md:auto-rows-fr">
             {trustCards.map((item) => (
@@ -156,9 +156,9 @@ export default function LocationPage() {
       <section className="bg-white px-6 py-20 text-slate-950">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION3_FEATURE_SECTION_KICKER}}"}</p>
-            <h2 className="max-w-2xl text-4xl font-bold tracking-tight md:text-5xl">{"{{LOCATION3_FEATURE_SECTION_TITLE}}"}</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{"{{LOCATION3_FEATURE_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Winchester vehicle hire"}</p>
+            <h2 className="max-w-2xl text-4xl font-bold tracking-tight md:text-5xl">{"A flexible range for city trips, removals and business travel"}</h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{"Winchester brings together commuter routes, city-centre driving and varied travel needs. Our hire range is shaped around that mix, giving you useful options whether the plan is simple or a little more demanding."}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button size="lg" className="bg-[#17a24a] text-white hover:bg-[#12843c]" asChild>
                 <a href={phoneHref}>No Hassle Booking {phoneDisplay}</a>
@@ -178,13 +178,13 @@ export default function LocationPage() {
 
       <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION3_CONTENT_SECTION_KICKER}}"}</p>
-          <h2 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION3_CONTENT_SECTION_TITLE}}"}</h2>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Local hire details"}</p>
+          <h2 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Vehicle Hire Winchester with the right balance of comfort and capacity"}</h2>
           <div className="mx-auto mt-8 max-w-3xl space-y-6 text-lg leading-8 text-slate-600">
-            <p>{"{{LOCATION3_CONTENT_SECTION_PARAGRAPH_1}}"}</p>
-            <p>{"{{LOCATION3_CONTENT_SECTION_PARAGRAPH_2}}"}</p>
-            <p>{"{{LOCATION3_CONTENT_SECTION_PARAGRAPH_3}}"}</p>
-            <p>{"{{LOCATION3_CONTENT_SECTION_PARAGRAPH_4}}"}</p>
+            <p>{"Winchester customers often need a vehicle that feels at home in town but still performs well on the surrounding road network. A hire car can be ideal for everyday use, while a van or truck makes bigger tasks easier to manage."}</p>
+            <p>{"There is also steady demand for passenger vehicles that can keep groups together without the hassle of using multiple cars. That makes minibus hire a practical solution for shared plans, events and organised travel."}</p>
+            <p>{"For work use, the right hire vehicle can support site visits, deliveries and temporary cover when your own transport is unavailable. The key is choosing something that matches the day rather than overcommitting to a larger vehicle than needed."}</p>
+            <p>{"The hire process is kept focused on the essentials. That means sensible guidance, clear options and a straightforward booking experience for anyone who wants transport without unnecessary complication."}</p>
           </div>
         </div>
       </section>
@@ -193,9 +193,9 @@ export default function LocationPage() {
         <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.16),_transparent_60%)]" />
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION3_BENEFITS_SECTION_KICKER}}"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION3_BENEFITS_SECTION_TITLE}}"}</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">{"{{LOCATION3_BENEFITS_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Why it suits Winchester"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Hire that adapts to city life and busy schedules"}</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">{"Whether you need a vehicle for a short local journey or a more involved booking, flexibility and practicality are what matter most."}</p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {benefits.map((item) => (
@@ -216,8 +216,8 @@ export default function LocationPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Service Areas"}</p>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">{"{{LOCATION3_INFO_CONTENT_SECTION_TITLE}}"}</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">{"{{LOCATION3_INFO_CONTENT_SECTION_INTRO}}"}</p>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">{"Winchester coverage and hire support"}</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">{"Winchester is a strong service area for people who need transport for daily life, work commitments and travel that stretches across Hampshire or further."}</p>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {locationLinks.map((location) => (
@@ -228,16 +228,16 @@ export default function LocationPage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION3_INFO_CONTENT_BLOCK_1_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION3_INFO_CONTENT_BLOCK_1_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"City-centre friendly options"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"The right vehicle can make Winchester city driving less stressful, especially when parking, loading or meeting tight schedules are part of the plan."}</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION3_INFO_CONTENT_BLOCK_2_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION3_INFO_CONTENT_BLOCK_2_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"Flexible for regional travel"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"Many customers use Winchester as a base for journeys towards Southampton, Basingstoke, Andover or the South Downs, so having the right hire vehicle matters."}</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION3_INFO_CONTENT_BLOCK_3_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION3_INFO_CONTENT_BLOCK_3_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"Useful for planned and last-minute needs"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"Whether the booking is arranged well in advance or needed to fill a gap, the service is designed to keep things simple and workable for the customer."}</p>
             </div>
           </div>
         </div>
@@ -247,14 +247,14 @@ export default function LocationPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Local Guide"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION3_LOCAL_GUIDE_SECTION_TITLE}}"}</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">{"{{LOCATION3_LOCAL_GUIDE_SECTION_DESCRIPTION}}"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Driving around Winchester with a hire vehicle"}</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">{"A few practical notes for planning vehicle hire in Winchester, with routes, landmarks and fuel stops that make everyday driving a little easier."}</p>
           </div>
           <div className="mx-auto mt-12 max-w-4xl space-y-6 text-left">
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION3_LOCAL_GUIDE_PARAGRAPH_1}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION3_LOCAL_GUIDE_PARAGRAPH_2}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION3_LOCAL_GUIDE_PARAGRAPH_3}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION3_LOCAL_GUIDE_PARAGRAPH_4}}"}</p>
+            <p className="text-base leading-8 text-slate-600">{"If you are collecting a hire vehicle in the city centre, the approach around Upper Brook Street, Saint George's Street and Friarsgate is best treated with a little extra time. These are busy central streets, so it helps to plan your pickup and departure outside the rush where possible and get your route set before you leave the forecourt."}</p>
+            <p className="text-base leading-8 text-slate-600">{"For local stays and short business journeys, Winchester’s centre puts you close to practical stopping points such as the Mercure Winchester Wessex Hotel and Travelodge Winchester, with Curle's Passage and the County War Memorial giving you easy reference points when you are navigating back into town. That makes the area straightforward for guest transfers, meeting runs and same-day deliveries."}</p>
+            <p className="text-base leading-8 text-slate-600">{"When you need to refuel before heading out, there are several familiar options within easy reach, including BP, St Cross Road Filling Station, Tesco, Sainsbury's and Harestock Garage. For longer trips, it is worth topping up early so you can leave the city prepared rather than searching for fuel once you are already on the move."}</p>
+            <p className="text-base leading-8 text-slate-600">{"A hire van, car or minibus is useful here whether you are moving across the city or heading further afield on Hampshire roads. Pittvale Service Station can also serve as a handy final stop on the way out, especially if you are joining a wider route after a local collection and want everything sorted before you travel."}</p>
           </div>
         </div>
       </section>
@@ -262,9 +262,9 @@ export default function LocationPage() {
       <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION3_FAQ_SECTION_KICKER}}"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION3_FAQ_SECTION_TITLE}}"}</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">{"{{LOCATION3_FAQ_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"FAQs"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Winchester hire questions at a glance"}</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">{"Helpful answers for arranging self-drive hire in Winchester."}</p>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-slate-50 px-6 shadow-sm">
             {faqs.map((item, index) => (
@@ -282,8 +282,8 @@ export default function LocationPage() {
 
       <section className="bg-[#17a24a] px-6 py-16 text-center text-white">
         <div className="mx-auto max-w-2xl">
-          <h2 className="mb-4 text-4xl font-bold">{"{{LOCATION3_CTA_TITLE}}"}</h2>
-          <p className="mb-8 text-lg text-green-100">{"{{LOCATION3_CTA_DESCRIPTION}}"}</p>
+          <h2 className="mb-4 text-4xl font-bold">{"Arrange your Winchester vehicle hire"}</h2>
+          <p className="mb-8 text-lg text-green-100">{"Speak to us about the journey you have in mind and we will help you choose a vehicle that suits it well."}</p>
           <Button size="lg" className="bg-white text-[#17a24a] hover:bg-gray-100" asChild>
             <a href={phoneHref}>Book Now</a>
           </Button>

@@ -20,20 +20,20 @@ import {
 } from "lucide-react";
 
 export default function LocationPage() {
-  const locationLinks = buildLocationLinks("{{LOCATION_4_NAME}}");
-  const heroImage = { src: "/images/location4-image1.jpeg", alt: "{{LOCATION4_IMAGE_1_ALT}}" };
-  const supportImage = { src: "/images/location4-image2.jpeg", alt: "{{LOCATION4_IMAGE_2_ALT}}" };
+  const locationLinks = buildLocationLinks("Eastleigh");
+  const heroImage = { src: "/images/location4-image1.jpeg", alt: "A hire van on a road near Eastleigh with a travel-focused backdrop." };
+  const supportImage = { src: "/images/location4-image2.jpeg", alt: "A staff member checking a clean hire van on a forecourt in Eastleigh." };
   const faqs = [
-    { question: "{{LOCATION4_FAQ_1_QUESTION}}", answer: "{{LOCATION4_FAQ_1_ANSWER}}" },
-    { question: "{{LOCATION4_FAQ_2_QUESTION}}", answer: "{{LOCATION4_FAQ_2_ANSWER}}" },
-    { question: "{{LOCATION4_FAQ_3_QUESTION}}", answer: "{{LOCATION4_FAQ_3_ANSWER}}" },
-    { question: "{{LOCATION4_FAQ_4_QUESTION}}", answer: "{{LOCATION4_FAQ_4_ANSWER}}" },
-    { question: "{{LOCATION4_FAQ_5_QUESTION}}", answer: "{{LOCATION4_FAQ_5_ANSWER}}" },
+    { question: "Is Eastleigh a good place for van hire?", answer: "Yes. Van hire is useful for moving jobs, collections and local trade work around town." },
+    { question: "Can I hire a car for airport or station travel?", answer: "Yes. A hire car can suit airport runs, station pickups and everyday travel." },
+    { question: "Do you offer minibus hire for groups?", answer: "Yes. Minibuses are available for family events, clubs and organised trips." },
+    { question: "What if I need a truck for work?", answer: "Truck hire can support heavier loads, deliveries and larger commercial tasks." },
+    { question: "How quickly can I arrange a booking?", answer: "Get in touch with your dates and vehicle type and we will take it from there." },
   ];
   const trustCards = [
-    { title: "{{LOCATION4_TRUST_CARD_1_TITLE}}", description: "{{LOCATION4_TRUST_CARD_1_DESCRIPTION}}", icon: ShieldCheck },
-    { title: "{{LOCATION4_TRUST_CARD_2_TITLE}}", description: "{{LOCATION4_TRUST_CARD_2_DESCRIPTION}}", icon: Star },
-    { title: "{{LOCATION4_TRUST_CARD_3_TITLE}}", description: "{{LOCATION4_TRUST_CARD_3_DESCRIPTION}}", icon: Users },
+    { title: "Handy for travel hubs", description: "Useful when journeys need to connect neatly with stations, airports or nearby roads.", icon: ShieldCheck },
+    { title: "Practical fleet choice", description: "A range that suits commuters, families and local businesses alike.", icon: Star },
+    { title: "Simple support when plans change", description: "A sensible option if your trip details need a little flexibility.", icon: Users },
   ];
   const featureStats = [
     { value: "Car Hire", label: "Flexible travel for everyday journeys" },
@@ -42,9 +42,9 @@ export default function LocationPage() {
     { value: "Truck Hire", label: "Strong transport options for heavier loads" },
   ];
   const benefits = [
-    { icon: BadgePoundSterling, title: "{{LOCATION4_BENEFIT_1_TITLE}}", description: "{{LOCATION4_BENEFIT_1_DESCRIPTION}}", detail: "{{LOCATION4_BENEFIT_1_DETAIL}}" },
-    { icon: Clock3, title: "{{LOCATION4_BENEFIT_2_TITLE}}", description: "{{LOCATION4_BENEFIT_2_DESCRIPTION}}", detail: "{{LOCATION4_BENEFIT_2_DETAIL}}" },
-    { icon: CheckCircle2, title: "{{LOCATION4_BENEFIT_3_TITLE}}", description: "{{LOCATION4_BENEFIT_3_DESCRIPTION}}", detail: "{{LOCATION4_BENEFIT_3_DETAIL}}" },
+    { icon: BadgePoundSterling, title: "Well placed for busy schedules", description: "Eastleigh customers often need a vehicle that keeps up with work, travel and family plans.", detail: "A hire car, van or minibus can reduce the strain on the day." },
+    { icon: Clock3, title: "Good for moving and deliveries", description: "Choose a van or truck when you need practical space for cargo or equipment.", detail: "Useful for home moves, retail runs and site work." },
+    { icon: CheckCircle2, title: "Useful for group transport", description: "Minibus hire keeps passengers together and makes coordinated travel easier.", detail: "Ideal for outings, events and club trips." },
   ];
 
   return (
@@ -86,8 +86,8 @@ export default function LocationPage() {
           <div className="relative z-10 grid gap-12 lg:grid-cols-[1fr_420px] lg:items-center">
             <div className="max-w-3xl">
               <div className="flex flex-col gap-6">
-                <h1 className="text-5xl font-bold tracking-tight">{"{{LOCATION4_HERO_TITLE}}"}</h1>
-                <p className="text-xl text-green-100">{"{{LOCATION4_HERO_SUBTITLE}}"}</p>
+                <h1 className="text-5xl font-bold tracking-tight">{"Vehicle Hire Eastleigh for Flexible Local Travel"}</h1>
+                <p className="text-xl text-green-100">{"A practical hire service for Eastleigh customers needing cars, vans, minibuses or trucks for work, family plans and everyday journeys."}</p>
                 <Button size="lg" className="w-fit bg-[#17a24a] text-white hover:bg-[#12843c]" asChild>
                   <a href={phoneHref}>Book Now</a>
                 </Button>
@@ -110,18 +110,18 @@ export default function LocationPage() {
               <div className="max-w-2xl">
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-green-200 bg-white/80 px-3 py-1 text-sm font-medium text-[#17a24a] backdrop-blur">
                   <PhoneCall className="h-4 w-4" />
-                  {"{{LOCATION4_BOOKING_BADGE_TEXT}}"}
+                  {"Eastleigh vehicle hire"}
                 </div>
-                <h2 className="text-2xl font-bold tracking-tight text-slate-950 md:text-3xl">{"{{LOCATION4_BOOKING_SECTION_TITLE}}"}</h2>
-                <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION4_BOOKING_SECTION_DESCRIPTION}}"}</p>
+                <h2 className="text-2xl font-bold tracking-tight text-slate-950 md:text-3xl">{"Choose a hire option that suits your schedule"}</h2>
+                <p className="mt-3 text-base leading-7 text-slate-600">{"When you need transport around Eastleigh, the main thing is finding a vehicle that fits the plan without causing extra hassle. We keep booking clear, direct and useful."}</p>
                 <div className="mt-5 flex flex-wrap gap-3 text-sm text-slate-600">
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 shadow-sm">
                     <PhoneCall className="h-4 w-4 text-[#17a24a]" />
-                    {"{{LOCATION4_BOOKING_FEATURE_1}}"}
+                    {"Support for local and regional use"}
                   </div>
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 shadow-sm">
                     <Clock3 className="h-4 w-4 text-[#17a24a]" />
-                    {"{{LOCATION4_BOOKING_FEATURE_2}}"}
+                    {"Cars, vans, minibuses and trucks"}
                   </div>
                 </div>
               </div>
@@ -136,8 +136,8 @@ export default function LocationPage() {
       <section id="trust" className="px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold">{"{{LOCATION4_TRUST_SECTION_TITLE}}"}</h2>
-            <p className="text-lg text-muted-foreground">{"{{LOCATION4_TRUST_SECTION_DESCRIPTION}}"}</p>
+            <h2 className="mb-4 text-4xl font-bold">{"Reliable hire for Eastleigh journeys"}</h2>
+            <p className="text-lg text-muted-foreground">{"A practical service for customers who want the right vehicle and a simple way to arrange it."}</p>
           </div>
           <div className="grid gap-8 md:grid-cols-3 md:auto-rows-fr">
             {trustCards.map((item) => (
@@ -156,9 +156,9 @@ export default function LocationPage() {
       <section className="bg-white px-6 py-20 text-slate-950">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION4_FEATURE_SECTION_KICKER}}"}</p>
-            <h2 className="max-w-2xl text-4xl font-bold tracking-tight md:text-5xl">{"{{LOCATION4_FEATURE_SECTION_TITLE}}"}</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{"{{LOCATION4_FEATURE_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Eastleigh hire options"}</p>
+            <h2 className="max-w-2xl text-4xl font-bold tracking-tight md:text-5xl">{"Vehicles that work for commuting, moving and group travel"}</h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{"Eastleigh has strong transport links and a mix of travel needs, from station runs to local business jobs. Our hire range is designed to support that variety with sensible options and straightforward service."}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button size="lg" className="bg-[#17a24a] text-white hover:bg-[#12843c]" asChild>
                 <a href={phoneHref}>No Hassle Booking {phoneDisplay}</a>
@@ -178,13 +178,13 @@ export default function LocationPage() {
 
       <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION4_CONTENT_SECTION_KICKER}}"}</p>
-          <h2 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION4_CONTENT_SECTION_TITLE}}"}</h2>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Local hire overview"}</p>
+          <h2 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Vehicle Hire Eastleigh for everyday needs and bigger tasks"}</h2>
           <div className="mx-auto mt-8 max-w-3xl space-y-6 text-lg leading-8 text-slate-600">
-            <p>{"{{LOCATION4_CONTENT_SECTION_PARAGRAPH_1}}"}</p>
-            <p>{"{{LOCATION4_CONTENT_SECTION_PARAGRAPH_2}}"}</p>
-            <p>{"{{LOCATION4_CONTENT_SECTION_PARAGRAPH_3}}"}</p>
-            <p>{"{{LOCATION4_CONTENT_SECTION_PARAGRAPH_4}}"}</p>
+            <p>{"Eastleigh’s location makes it useful for commuters, shoppers and businesses that need flexible transport. A hire car can cover everyday journeys, while a van or truck makes heavier jobs far more manageable."}</p>
+            <p>{"With Southampton Airport and the railway network nearby, there is regular demand for vehicles that support airport runs, station pickups and short-notice travel. That is where a straightforward hire service really helps."}</p>
+            <p>{"Minibus hire also has an obvious place here, especially for group events, day trips and coordinated travel where keeping everyone together is the easiest solution."}</p>
+            <p>{"The focus stays on matching the vehicle to the purpose, whether that is a quick local run or a more involved booking with several moving parts. It keeps the process useful rather than overcomplicated."}</p>
           </div>
         </div>
       </section>
@@ -193,9 +193,9 @@ export default function LocationPage() {
         <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.16),_transparent_60%)]" />
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION4_BENEFITS_SECTION_KICKER}}"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION4_BENEFITS_SECTION_TITLE}}"}</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">{"{{LOCATION4_BENEFITS_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Why it works"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"A hire service suited to Eastleigh’s pace"}</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">{"When your day is already busy, the vehicle side should feel straightforward. That is the idea behind the way these hire options are set up."}</p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {benefits.map((item) => (
@@ -216,8 +216,8 @@ export default function LocationPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Service Areas"}</p>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">{"{{LOCATION4_INFO_CONTENT_SECTION_TITLE}}"}</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">{"{{LOCATION4_INFO_CONTENT_SECTION_INTRO}}"}</p>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">{"Eastleigh service area details"}</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">{"Eastleigh is well positioned for a broad range of hire customers, including commuters, local residents and businesses moving around the central Hampshire corridor."}</p>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {locationLinks.map((location) => (
@@ -228,16 +228,16 @@ export default function LocationPage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION4_INFO_CONTENT_BLOCK_1_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION4_INFO_CONTENT_BLOCK_1_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"Strong links for travel"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"Eastleigh works well for drivers heading towards Southampton, Winchester or the wider motorway network, making it a useful place to pick up the right vehicle for the trip."}</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION4_INFO_CONTENT_BLOCK_2_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION4_INFO_CONTENT_BLOCK_2_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"Useful for short-term needs"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"A hired car, van, minibus or truck can help when your usual transport is unavailable or when the job simply calls for something different."}</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION4_INFO_CONTENT_BLOCK_3_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION4_INFO_CONTENT_BLOCK_3_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"Convenient for mixed schedules"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"Whether the hire supports work, family plans or a one-off moving task, the service is set up to keep the arrangement practical and easy to follow."}</p>
             </div>
           </div>
         </div>
@@ -247,14 +247,14 @@ export default function LocationPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Local Guide"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION4_LOCAL_GUIDE_SECTION_TITLE}}"}</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">{"{{LOCATION4_LOCAL_GUIDE_SECTION_DESCRIPTION}}"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Local guide for Vehicle Hire Eastleigh"}</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">{"A few practical notes for hiring in Eastleigh, with route ideas and local stopovers that make collection and onward travel easier to plan."}</p>
           </div>
           <div className="mx-auto mt-12 max-w-4xl space-y-6 text-left">
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION4_LOCAL_GUIDE_PARAGRAPH_1}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION4_LOCAL_GUIDE_PARAGRAPH_2}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION4_LOCAL_GUIDE_PARAGRAPH_3}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION4_LOCAL_GUIDE_PARAGRAPH_4}}"}</p>
+            <p className="text-base leading-8 text-slate-600">{"Eastleigh sits well for straightforward departures onto Stoneham Way and the Stoneham Interchange, while Passfield Avenue and Bishopstoke Road are useful for reaching nearby residential and business areas without unnecessary detours. If you are heading out with a car, van, minibus or truck, it helps to plan your first few miles around the road type and traffic flow rather than just the shortest line on the map."}</p>
+            <p className="text-base leading-8 text-slate-600">{"For local errands or work trips, Stoneham Lane and Twyford Road give you a sensible link across the area, while the A335 corridor is handy when you want a clean run towards Southampton or the wider Hampshire network. Drivers collecting a larger vehicle often prefer to sort fuel stops early, with Eastleigh Service Station on Southampton Road and the nearby Asda forecourt both practical choices for topping up."}</p>
+            <p className="text-base leading-8 text-slate-600">{"If your plans include a hotel stop or a meeting near the station side of town, Ellington Lodge at The Concorde is a useful reference point, and Monks Brook Halt gives a simple marker for the local transport area. For a bit of context on the area, the Spitfire installation and the boards at Welcome to Avenue Park, North Stoneham and Welcome to Fleming Park Tiny Forest sit close enough to help you orient yourself without complicating the route."}</p>
+            <p className="text-base leading-8 text-slate-600">{"Before a longer drive, it is worth using one of the nearby fuel stops in the way that suits your route. West End Service Station can work well for drivers heading west or back towards Southampton, while ESSO, Sainsbury's and Shell all give you additional options a little further out. If you need a pause between jobs, Broad Oak Service Station is another familiar point to keep in mind while you map out the day."}</p>
           </div>
         </div>
       </section>
@@ -262,9 +262,9 @@ export default function LocationPage() {
       <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION4_FAQ_SECTION_KICKER}}"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION4_FAQ_SECTION_TITLE}}"}</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">{"{{LOCATION4_FAQ_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"FAQs"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Eastleigh hire questions answered"}</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">{"Clear, practical answers for self-drive hire in Eastleigh."}</p>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-slate-50 px-6 shadow-sm">
             {faqs.map((item, index) => (
@@ -282,8 +282,8 @@ export default function LocationPage() {
 
       <section className="bg-[#17a24a] px-6 py-16 text-center text-white">
         <div className="mx-auto max-w-2xl">
-          <h2 className="mb-4 text-4xl font-bold">{"{{LOCATION4_CTA_TITLE}}"}</h2>
-          <p className="mb-8 text-lg text-green-100">{"{{LOCATION4_CTA_DESCRIPTION}}"}</p>
+          <h2 className="mb-4 text-4xl font-bold">{"Book your Eastleigh hire vehicle today"}</h2>
+          <p className="mb-8 text-lg text-green-100">{"Tell us what you need and we will help you arrange a suitable vehicle for the trip, job or event."}</p>
           <Button size="lg" className="bg-white text-[#17a24a] hover:bg-gray-100" asChild>
             <a href={phoneHref}>Book Now</a>
           </Button>

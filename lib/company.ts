@@ -1,4 +1,4 @@
-export const companyName = "{{COMPANY_NAME}}";
-export const companyTagline = "{{COMPANY_TAGLINE}}";
-export const mainLocationName = "{{MAIN_LOCATION_NAME}}";
-export const siteUrl = "{{SITE_URL}}";
+export const companyName = "SVH North Baddesley";
+export const companyTagline = "Practical hire, done well";
+export const mainLocationName = "North Baddesley";
+export const siteUrl = "https://svh-north-baddesley.co.uk/";

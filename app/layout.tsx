@@ -3,8 +3,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: '{{META_TITLE}}',
-  description: '{{META_DESCRIPTION}}',
+  title: 'Vehicle Hire North Baddesley | SVH North Baddesley',
+  description: 'Vehicle Hire North Baddesley for cars, vans, minibuses and trucks, with straightforward booking and local support for everyday and business journeys.',
   generator: 'v0.app',
   icons: {
     icon: [

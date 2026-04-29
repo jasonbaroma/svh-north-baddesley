@@ -20,20 +20,20 @@ import {
 } from "lucide-react";
 
 export default function LocationPage() {
-  const locationLinks = buildLocationLinks("{{LOCATION_5_NAME}}");
-  const heroImage = { src: "/images/location5-image1.jpeg", alt: "{{LOCATION5_IMAGE_1_ALT}}" };
-  const supportImage = { src: "/images/location5-image2.jpeg", alt: "{{LOCATION5_IMAGE_2_ALT}}" };
+  const locationLinks = buildLocationLinks("Totton");
+  const heroImage = { src: "/images/location5-image1.jpeg", alt: "A clean hire vehicle on a road beside woodland near Totton." };
+  const supportImage = { src: "/images/location5-image2.jpeg", alt: "People loading furniture into a hired Luton van on a residential drive in Totton." };
   const faqs = [
-    { question: "{{LOCATION5_FAQ_1_QUESTION}}", answer: "{{LOCATION5_FAQ_1_ANSWER}}" },
-    { question: "{{LOCATION5_FAQ_2_QUESTION}}", answer: "{{LOCATION5_FAQ_2_ANSWER}}" },
-    { question: "{{LOCATION5_FAQ_3_QUESTION}}", answer: "{{LOCATION5_FAQ_3_ANSWER}}" },
-    { question: "{{LOCATION5_FAQ_4_QUESTION}}", answer: "{{LOCATION5_FAQ_4_ANSWER}}" },
-    { question: "{{LOCATION5_FAQ_5_QUESTION}}", answer: "{{LOCATION5_FAQ_5_ANSWER}}" },
+    { question: "Is Totton convenient for van hire?", answer: "Yes. Van hire is a practical option for moving, deliveries and local work around Totton." },
+    { question: "Can I hire a car for a coastal or forest trip?", answer: "Yes. A hire car can suit day trips, family outings and longer drives." },
+    { question: "Do you offer minibuses for larger groups?", answer: "Yes. Minibus hire is useful for group travel, events and organised outings." },
+    { question: "What if I need a truck for a bigger job?", answer: "Truck hire can help with heavier loads, removals and business transport." },
+    { question: "How do I decide which vehicle is best?", answer: "Share your plans and we will help you choose a vehicle that fits the task." },
   ];
   const trustCards = [
-    { title: "{{LOCATION5_TRUST_CARD_1_TITLE}}", description: "{{LOCATION5_TRUST_CARD_1_DESCRIPTION}}", icon: ShieldCheck },
-    { title: "{{LOCATION5_TRUST_CARD_2_TITLE}}", description: "{{LOCATION5_TRUST_CARD_2_DESCRIPTION}}", icon: Star },
-    { title: "{{LOCATION5_TRUST_CARD_3_TITLE}}", description: "{{LOCATION5_TRUST_CARD_3_DESCRIPTION}}", icon: Users },
+    { title: "Handy for New Forest access", description: "A useful base for drivers heading towards forest roads, town routes or the coast.", icon: ShieldCheck },
+    { title: "Suitable for work and leisure", description: "Flexible enough for trade jobs, outings and day-to-day travel.", icon: Star },
+    { title: "Clear and practical service", description: "Designed to keep booking simple and vehicle choice sensible.", icon: Users },
   ];
   const featureStats = [
     { value: "Car Hire", label: "Flexible travel for everyday journeys" },
@@ -42,9 +42,9 @@ export default function LocationPage() {
     { value: "Truck Hire", label: "Strong transport options for heavier loads" },
   ];
   const benefits = [
-    { icon: BadgePoundSterling, title: "{{LOCATION5_BENEFIT_1_TITLE}}", description: "{{LOCATION5_BENEFIT_1_DESCRIPTION}}", detail: "{{LOCATION5_BENEFIT_1_DETAIL}}" },
-    { icon: Clock3, title: "{{LOCATION5_BENEFIT_2_TITLE}}", description: "{{LOCATION5_BENEFIT_2_DESCRIPTION}}", detail: "{{LOCATION5_BENEFIT_2_DETAIL}}" },
-    { icon: CheckCircle2, title: "{{LOCATION5_BENEFIT_3_TITLE}}", description: "{{LOCATION5_BENEFIT_3_DESCRIPTION}}", detail: "{{LOCATION5_BENEFIT_3_DETAIL}}" },
+    { icon: BadgePoundSterling, title: "Useful for varied routes", description: "Totton journeys can lead into town, towards the forest or onto wider Hampshire roads.", detail: "A hire vehicle that suits the route makes the day easier to manage." },
+    { icon: Clock3, title: "Good for loads and passengers", description: "Choose the space you need, whether that means extra seats or a larger cargo area.", detail: "Practical for family plans, moving jobs and work use." },
+    { icon: CheckCircle2, title: "Flexible for short notice", description: "A helpful option when transport needs change quickly and you need a workable solution.", detail: "Useful for temporary cover and one-off bookings." },
   ];
 
   return (
@@ -86,8 +86,8 @@ export default function LocationPage() {
           <div className="relative z-10 grid gap-12 lg:grid-cols-[1fr_420px] lg:items-center">
             <div className="max-w-3xl">
               <div className="flex flex-col gap-6">
-                <h1 className="text-5xl font-bold tracking-tight">{"{{LOCATION5_HERO_TITLE}}"}</h1>
-                <p className="text-xl text-green-100">{"{{LOCATION5_HERO_SUBTITLE}}"}</p>
+                <h1 className="text-5xl font-bold tracking-tight">{"Vehicle Hire Totton for Local Trips and Practical Transport"}</h1>
+                <p className="text-xl text-green-100">{"Self-drive hire for Totton customers who want cars, vans, minibuses or trucks that are easy to arrange and useful for real-day travel."}</p>
                 <Button size="lg" className="w-fit bg-[#17a24a] text-white hover:bg-[#12843c]" asChild>
                   <a href={phoneHref}>Book Now</a>
                 </Button>
@@ -110,18 +110,18 @@ export default function LocationPage() {
               <div className="max-w-2xl">
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-green-200 bg-white/80 px-3 py-1 text-sm font-medium text-[#17a24a] backdrop-blur">
                   <PhoneCall className="h-4 w-4" />
-                  {"{{LOCATION5_BOOKING_BADGE_TEXT}}"}
+                  {"Totton bookings made easy"}
                 </div>
-                <h2 className="text-2xl font-bold tracking-tight text-slate-950 md:text-3xl">{"{{LOCATION5_BOOKING_SECTION_TITLE}}"}</h2>
-                <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION5_BOOKING_SECTION_DESCRIPTION}}"}</p>
+                <h2 className="text-2xl font-bold tracking-tight text-slate-950 md:text-3xl">{"Pick the right vehicle for the journey"}</h2>
+                <p className="mt-3 text-base leading-7 text-slate-600">{"From local errands to longer runs across Hampshire, a well-chosen hire vehicle can save time and reduce stress. We help make the booking feel clear from the outset."}</p>
                 <div className="mt-5 flex flex-wrap gap-3 text-sm text-slate-600">
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 shadow-sm">
                     <PhoneCall className="h-4 w-4 text-[#17a24a]" />
-                    {"{{LOCATION5_BOOKING_FEATURE_1}}"}
+                    {"Forest and coast travel"}
                   </div>
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 shadow-sm">
                     <Clock3 className="h-4 w-4 text-[#17a24a]" />
-                    {"{{LOCATION5_BOOKING_FEATURE_2}}"}
+                    {"Local, personal, and business hire"}
                   </div>
                 </div>
               </div>
@@ -136,8 +136,8 @@ export default function LocationPage() {
       <section id="trust" className="px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold">{"{{LOCATION5_TRUST_SECTION_TITLE}}"}</h2>
-            <p className="text-lg text-muted-foreground">{"{{LOCATION5_TRUST_SECTION_DESCRIPTION}}"}</p>
+            <h2 className="mb-4 text-4xl font-bold">{"Totton hire with a practical focus"}</h2>
+            <p className="text-lg text-muted-foreground">{"A straightforward service that gives you useful choices for private trips, work needs and larger transport tasks."}</p>
           </div>
           <div className="grid gap-8 md:grid-cols-3 md:auto-rows-fr">
             {trustCards.map((item) => (
@@ -156,9 +156,9 @@ export default function LocationPage() {
       <section className="bg-white px-6 py-20 text-slate-950">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION5_FEATURE_SECTION_KICKER}}"}</p>
-            <h2 className="max-w-2xl text-4xl font-bold tracking-tight md:text-5xl">{"{{LOCATION5_FEATURE_SECTION_TITLE}}"}</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{"{{LOCATION5_FEATURE_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Totton vehicle hire"}</p>
+            <h2 className="max-w-2xl text-4xl font-bold tracking-tight md:text-5xl">{"A sensible choice for moving, commuting and day trips"}</h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{"Totton customers often need transport that works across different kinds of journeys. Our hire range is broad enough to support everyday use while staying simple to arrange."}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button size="lg" className="bg-[#17a24a] text-white hover:bg-[#12843c]" asChild>
                 <a href={phoneHref}>No Hassle Booking {phoneDisplay}</a>
@@ -178,13 +178,13 @@ export default function LocationPage() {
 
       <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION5_CONTENT_SECTION_KICKER}}"}</p>
-          <h2 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION5_CONTENT_SECTION_TITLE}}"}</h2>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Local use guide"}</p>
+          <h2 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Vehicle Hire Totton for everyday needs, group travel and bigger loads"}</h2>
           <div className="mx-auto mt-8 max-w-3xl space-y-6 text-lg leading-8 text-slate-600">
-            <p>{"{{LOCATION5_CONTENT_SECTION_PARAGRAPH_1}}"}</p>
-            <p>{"{{LOCATION5_CONTENT_SECTION_PARAGRAPH_2}}"}</p>
-            <p>{"{{LOCATION5_CONTENT_SECTION_PARAGRAPH_3}}"}</p>
-            <p>{"{{LOCATION5_CONTENT_SECTION_PARAGRAPH_4}}"}</p>
+            <p>{"Totton sits in a useful spot for drivers who need to move between residential areas, the New Forest and the Southampton side of Hampshire. That makes it a strong place to arrange a hire vehicle that suits multiple kinds of journey."}</p>
+            <p>{"A car can handle day-to-day travel comfortably, while a van or truck gives you the extra room needed for deliveries, house moves or work projects. The aim is always to match the vehicle to the task at hand."}</p>
+            <p>{"For groups, minibus hire can make outings and event travel simpler by keeping everyone together in one vehicle. It also cuts down on parking and coordination problems when the plan involves several passengers."}</p>
+            <p>{"The booking process is kept grounded and useful. That means clear guidance, sensible vehicle options and a service that works whether you are a regular customer or arranging something one-off."}</p>
           </div>
         </div>
       </section>
@@ -193,9 +193,9 @@ export default function LocationPage() {
         <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.16),_transparent_60%)]" />
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION5_BENEFITS_SECTION_KICKER}}"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION5_BENEFITS_SECTION_TITLE}}"}</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">{"{{LOCATION5_BENEFITS_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Why it helps"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Flexible hire for everyday Totton journeys"}</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">{"When you need transport that fits the day rather than complicating it, a well-matched hire vehicle can make a real difference."}</p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {benefits.map((item) => (
@@ -216,8 +216,8 @@ export default function LocationPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Service Areas"}</p>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">{"{{LOCATION5_INFO_CONTENT_SECTION_TITLE}}"}</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">{"{{LOCATION5_INFO_CONTENT_SECTION_INTRO}}"}</p>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">{"Totton coverage and support"}</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">{"Totton is a practical base for customers who need hire vehicles for local jobs, longer routes and a mix of personal and commercial use."}</p>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {locationLinks.map((location) => (
@@ -228,16 +228,16 @@ export default function LocationPage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION5_INFO_CONTENT_BLOCK_1_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION5_INFO_CONTENT_BLOCK_1_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"Useful for local routes"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"Totton drivers often split their time between local roads and routes towards Southampton or the New Forest, so choosing a suitable vehicle can save effort across the whole day."}</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION5_INFO_CONTENT_BLOCK_2_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION5_INFO_CONTENT_BLOCK_2_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"Ready for different tasks"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"From shopping runs to trade deliveries, the service covers the kind of varied bookings that happen in a busy town area."}</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"{{LOCATION5_INFO_CONTENT_BLOCK_3_TITLE}}"}</h3>
-              <p className="mt-3 text-base leading-7 text-slate-600">{"{{LOCATION5_INFO_CONTENT_BLOCK_3_BODY}}"}</p>
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{"Easy to organise around the week"}</h3>
+              <p className="mt-3 text-base leading-7 text-slate-600">{"Whether the hire is for a single day or a longer stretch, the process is designed to stay clear and manageable for customers with busy schedules."}</p>
             </div>
           </div>
         </div>
@@ -247,14 +247,14 @@ export default function LocationPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"Local Guide"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION5_LOCAL_GUIDE_SECTION_TITLE}}"}</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">{"{{LOCATION5_LOCAL_GUIDE_SECTION_DESCRIPTION}}"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Hiring around Totton"}</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">{"A few practical notes for planning vehicle hire in Totton, with route tips and familiar stops that make local journeys easier to organise."}</p>
           </div>
           <div className="mx-auto mt-12 max-w-4xl space-y-6 text-left">
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION5_LOCAL_GUIDE_PARAGRAPH_1}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION5_LOCAL_GUIDE_PARAGRAPH_2}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION5_LOCAL_GUIDE_PARAGRAPH_3}}"}</p>
-            <p className="text-base leading-8 text-slate-600">{"{{LOCATION5_LOCAL_GUIDE_PARAGRAPH_4}}"}</p>
+            <p className="text-base leading-8 text-slate-600">{"Totton sits close to a useful spread of main routes, so collection works well for everyday town driving and longer cross-city trips alike. Junction Road and Commercial Road are close by for straightforward local access, while Ringwood Road and Redbridge Causeway give you a cleaner run toward Southampton and beyond."}</p>
+            <p className="text-base leading-8 text-slate-600">{"If you are heading out for a stay, Brimar Guest House and Holiday Inn Express Southampton West are easy reference points for planning pickups and drop-offs around guest travel. That makes the area practical for visitors who need a car, van, or minibus without losing time on awkward detours."}</p>
+            <p className="text-base leading-8 text-slate-600">{"For leisure trips, Eling Tide Mill Experience Visitor Centre, Eling Tide Mill, and Goatee Shore sit neatly into a day out by the water. They also suit drivers who want a compact hire vehicle for local sightseeing, with enough space for bags, picnic gear, or family kit."}</p>
+            <p className="text-base leading-8 text-slate-600">{"When refuelling or topping up before a journey, Totton has a sensible mix nearby, including Tesco Fuel, Morrisons, Asda Express, Shell, and the Port of Southampton HGV Refuelling Site. Calmore Service Station is another useful stop if you are planning a heavier run or heading out early."}</p>
           </div>
         </div>
       </section>
@@ -262,9 +262,9 @@ export default function LocationPage() {
       <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"{{LOCATION5_FAQ_SECTION_KICKER}}"}</p>
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"{{LOCATION5_FAQ_SECTION_TITLE}}"}</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">{"{{LOCATION5_FAQ_SECTION_DESCRIPTION}}"}</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#17a24a]">{"FAQs"}</p>
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{"Totton hire questions made clear"}</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">{"A few practical answers for customers booking in Totton and the surrounding area."}</p>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-slate-50 px-6 shadow-sm">
             {faqs.map((item, index) => (
@@ -282,8 +282,8 @@ export default function LocationPage() {
 
       <section className="bg-[#17a24a] px-6 py-16 text-center text-white">
         <div className="mx-auto max-w-2xl">
-          <h2 className="mb-4 text-4xl font-bold">{"{{LOCATION5_CTA_TITLE}}"}</h2>
-          <p className="mb-8 text-lg text-green-100">{"{{LOCATION5_CTA_DESCRIPTION}}"}</p>
+          <h2 className="mb-4 text-4xl font-bold">{"Start your Totton vehicle hire booking"}</h2>
+          <p className="mb-8 text-lg text-green-100">{"Let us know your plans and we will help you choose a vehicle that works for the route and the task."}</p>
           <Button size="lg" className="bg-white text-[#17a24a] hover:bg-gray-100" asChild>
             <a href={phoneHref}>Book Now</a>
           </Button>
